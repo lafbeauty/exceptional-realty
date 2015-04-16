@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+/*This is a comment! */
+/*css syntax:
+
+selector {
+	property: value;
+	property: value;
+}
+*/
+/*Type selector*/
+
+p{/*select all <p> */
+	font-size: 1em; /*16px, ?pt, 100%, 1em */
+	line-height: 1.5em;}
+
+	figcaption{
+		/*font-weight: normal;
+		font-size: 0.75em;
+		font-size: 0.75em;
+		line-height: 1.5em;
+		font-family: Georgia, "New Times Roman", serif;*/
+		font: normal 0.75em/1.5em "elsie swash caps", serif;
+		/*color: #0000FF;*/ /*color: rgba(255,0,0,1);*/
+		color: #777;
+		text-align: right;
+	}
+	/* class selector applied to as many elements as you like */
+
+.milk-text {/*select elemtents with this class */
+			font: bold 2.6em 'Elsie Swash Caps', cursive;
+			color: white;
+			text-shadow: 0 2px 3px #000;
+		}
+/*ID selector can only apply to one unique element per page */
+
+#logo {/*select elements with the id of "logo"*/
+		background: aqua;
+}
+/*Descendent Selector */
+#logo h1{ /* selects <h1> if inside the id of id="logo" */
+      font-family: 'clicker script', cursive;
+
+}
+#logo h2{ 
+		font-family: 'Elsie Swash Caps', cursive;
+}
+/* Pseudo Class Selector -just links inside a certain section*/
+
+#details a:link {
+
+	color:black;
+	text-decoration: none;
+}
+
+#details a:visted, #details a:visited {
+
+	color:black;
+	text-decoration: none;
+}
+
+#details a:hover{
+	color: black;
+	text-decoration: underline;
+}
+
+#details a:active {
+	color: red;
+
+}
+
+
+
+
+
+
+
+
+
+
