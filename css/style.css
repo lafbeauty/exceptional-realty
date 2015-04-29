@@ -10,7 +10,7 @@ selector {
 */
 /*Type selector*/
 
-p{/*select all <p> */
+ p{/*select all <p> */
 	font-size: 1em; /*16px, ?pt, 100%, 1em */
 	line-height: 1.5em;}
 
@@ -69,12 +69,49 @@ p{/*select all <p> */
 
 }
 
+/*///////// LAYOUT STYLE ////////// */
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background: #eee;
+		}
+/* 3 column structure*/
+
+.col-1 {
+	float: left;
+	width: 32%;
+	background: aqua;
+}
+
+.col-2 {
+	float: left;
+	width: 66%;
+	background: ccc;
+		}
+
+	/* this element will take up 100%; an element with no width or float will automatically take up 100% of the space*/
+
+.col-3 {
+	background: ccc;
+}
 
 
 
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
 
 
+[class^="col-"] {
+	margin-left: 2%;
+}
 
-
-
-
+.first {
+	margin-left: 0%;
+}
