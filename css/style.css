@@ -35,7 +35,7 @@ selector {
 /*ID selector can only apply to one unique element per page */
 
 #logo {/*select elements with the id of "logo"*/
-		background: aqua;
+		background: white;
 }
 /*Descendent Selector */
 #logo h1{ /* selects <h1> if inside the id of id="logo" */
@@ -69,10 +69,22 @@ selector {
 
 }
 
+/*//////MEDIA STYLE ////////*/
+
+img, video, audio{
+
+	max-width: 100%;
+}
+
 /*///////// LAYOUT STYLE ////////// */
+* {
+
+	 -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
 
 .wrapper {
-	width: 960px;
+	width: 1080px;
 	margin: 0 auto;
 	background: #eee;
 		}
@@ -81,19 +93,19 @@ selector {
 .col-1 {
 	float: left;
 	width: 32%;
-	background: aqua;
+	background: #777777;
 }
 
 .col-2 {
 	float: left;
 	width: 66%;
-	background: ccc;
+	background: #ccc;
 		}
 
 	/* this element will take up 100%; an element with no width or float will automatically take up 100% of the space*/
 
 .col-3 {
-	background: ccc;
+	background: #ccc;
 }
 
 
@@ -115,3 +127,62 @@ selector {
 .first {
 	margin-left: 0%;
 }
+
+/*///////// Section STYLE ////////// */
+
+
+section {
+	padding: 20px;
+	margin-bottom: 20px
+}
+
+#social {
+	position: fixed;
+	top: 200px;
+	right: 20px;
+	width: 40px;
+	z-index: 1;
+}
+
+#social  a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: yellow;
+}
+
+header {
+	position: fized;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
